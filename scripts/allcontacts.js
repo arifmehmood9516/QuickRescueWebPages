@@ -23,7 +23,7 @@ $.ajax({
     	    htmltable+="<tr><td><i class=\"fas fa-key\"></i></td><td><i class=\"fas fa-user\"></i></td><td>" + dataRec[i].firstName
     	    		+" "+ dataRec[i].lastName +"</td><td>" + dataRec[i].email+ "</td><td>"+ dataRec[i].address.city+
     	    		", "+dataRec[i].address.state+", "+dataRec[i].address.country+"</td>" +
-    	    				"<td> <a class=\"edit_link\"  id=\""+dataRec[i].id+"\"   style=\"margin:10px\" >Edit</a> <a class=\"deletecontact\"  id=\""+dataRec[i].id+"\"  style=\"margin:10px\" >Delete</a> " +
+    	    				"<td> <a class=\"edit_link\"  id=\""+dataRec[i].id+"\"   style=\"text-decoration: underline;color:blue;margin:10px\" >Edit</a> <a class=\"deletecontact\"  id=\""+dataRec[i].id+"\"  style=\"text-decoration: underline;color:blue;margin:10px\" >Delete</a> " +
     	    				"</td></tr>";
     	}
     	$('#contactTab tr').first().after(htmltable);
