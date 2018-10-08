@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="styles/viewmap.css">
+
+</head>
+
+
+<body >
+
+<header class="top">
+<img src="images/logo.png" alt="Logo">
+<a href="login.html" onclick="logout();"  style="font-size:20px;margin:20px;margin-left:20px;float:right;" >Logout</a>
+<a href="" id="emailid" style="color:white;font-size:20px;margin-top:20px;float:right;" ></a>
+</header>
+
+<div class="upper">
+	 <input type="text" placeholder="Search Content" name="usearch">
+	<a id="newuser" class="comment_link" href="" style="text-decoration:none;margin:10px" ><i class="fas fa-plus-square" style="color:green" ></i>New User</a>&nbsp;
+	<a href="" style="margin:10px" >View Contact Home On Map</a>
+</div>
+ <div id="map"></div>
+
+<footer class="bottom"></footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDJ4n5j3xuaSgnzkqYyM9JgBicx531bjI"
+    async defer></script>
+<script src="scripts/viewmap.js"></script>
+
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="styles/allcontacts.css">
+
+</head>
+
+
+<body>
+<header class="top">
+<img src="images/logo.png" alt="Logo">
+<a href="login.html" onclick="logout();" style="font-size:20px;margin:20px;margin-left:20px;float:right;" >Logout</a>
+<a href="" id="emailid"  style="color:white;font-size:20px;margin-top:20px;float:right;"></a>
+</header>
+
+<div class="div2">
+	<form id="editform" action="#"> 
+		<br>UserName/Email:<br>
+  		<input type="text" placeholder="Username/Email" name="uemail">
+  		<br>First Name:<br>
+  		<input type="text" placeholder="First Name" name="ufname">
+  		<br>Last Name:<br>
+  		<input type="text" placeholder="Last Name" name="ulname">
+  		<br>Mobile Number:<br>
+  		<input type="text" placeholder="Mobile No" name="umobile">
+  		<br>Street Address:<br>
+  		<input type="text" placeholder="Street Address" name="ustreet">
+  		<br>City:<br>
+  		<input type="text" placeholder="City" name="ucity">
+  		<br>Country:<br>
+  		<input type="text" placeholder="Country" name="ucountry">
+ 	 	<input type="submit" onclick="aucontact()" value="Save">
+ 	 	<input type="button" onclick="cancelForm()" value="Cancel">
+	</form>
+</div>
+
+<div class="upper">
+	 <input type="text" placeholder="Search Content" id="usearch">
+	<a id="0" class="comment_link" href="" style="text-decoration:none;margin:10px" ><i class="fas fa-plus-square" style="color:green" ></i>New User</a>&nbsp;
+	<a href="viewmap.html" style="margin:10px" >View Contact Home On Map</a>
+</div>
+
+<div class="center">
+<table id="contactTab">
+  <tr>
+    <th id="idpic"></th>
+    <th id="idpic">Picture</th>
+    <th>Name</th> 
+    <th>Email</th>
+    <th>Home City/Country</th>
+    <th>Action</th>
+  </tr>
+</table>
+</div>
+
+<footer class="bottom"></footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scripts/allcontacts.js"></script>
+
+
+</body>
+
+</html>
+
+
