@@ -9,8 +9,9 @@ function validateLogin(){
 	    	if(data.id>0)
 	    	{	localStorage.id=data.id;
 	    		localStorage.email=data.email;
-	    		window.open("allcontacts.html#");
 	    		close();
+	    		window.open("allcontacts.html");
+	    		
 	    	}
 	    }});
 }
